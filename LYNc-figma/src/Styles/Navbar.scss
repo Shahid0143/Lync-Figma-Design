@@ -1,0 +1,126 @@
+.navbar {
+  background-color: #291451;
+  border-radius: 30px;
+  box-shadow: 0 0 0 0.5px rgb(255, 255, 255);
+  margin: 65px auto 0;
+  position: relative;
+  width: 80%;
+
+  &__container {
+    align-items: center;
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  &__logo-and-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__links {
+    display: flex;
+    justify-content: space-evenly;
+    width: 60vw;
+
+    a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__actions {
+    position: relative;
+
+    & .navbar__button {
+      background-color: white;
+      border-radius: 19px;
+      color: black;
+      font-weight: 600;
+      padding: 10px 28px 10px 10px;
+    }
+
+    & .navbar__icon {
+      color: black;
+      left: 80%;
+      position: absolute;
+      top: 30%;
+    }
+  }
+
+  &__hamburger {
+    color: white;
+    cursor: pointer;
+    display: none;
+    font-size: 1.5rem;
+    position: absolute;
+    right: 20px;
+
+    @media (max-width: 768px) {
+      display: block;
+    }
+  }
+
+  &__dropdown {
+    background-color: #291451;
+    border-radius: 0 0 30px 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    padding: 10px;
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    z-index: 10;
+
+    a,
+    .navbar__button {
+      color: white;
+      margin: 10px 0;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .navbar__button {
+      background-color: white;
+      border-radius: 10px;
+      color: black;
+      margin: auto;
+      padding: 10px;
+      width: 90%;
+    }
+
+    @media (max-width: 768px) {
+      display: flex;
+    }
+  }
+
+  @media (max-width: 768px) {
+
+    &__links,
+    &__actions {
+      display: none;
+    }
+
+    &__container {
+      justify-content: space-between;
+    }
+
+    &__logo {
+      padding-left: 10px;
+    }
+  }
+}
