@@ -1,6 +1,6 @@
-import React from 'react'
-import "../Styles/Footersection.scss"
-import floor from"../assets/Floor.png"
+import React from "react";
+import "../Styles/Footersection.scss";
+import floor from "../assets/Floor.png";
 import floor1 from "../assets/Floor1.png";
 import { TiSocialLinkedinCircular } from "react-icons/ti";
 import { AiFillTwitterCircle } from "react-icons/ai";
@@ -20,7 +20,7 @@ export const Footersection = () => {
           </div>
         </div>
       </div>
-   
+
       <div className="mid-foot-box">
         <div className="txt-icon-box">
           <h2>LYNC</h2>
@@ -64,4 +64,4 @@ export const Footersection = () => {
       </div>
     </div>
   );
-}
+};

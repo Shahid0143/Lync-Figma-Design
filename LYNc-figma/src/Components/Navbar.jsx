@@ -26,9 +26,7 @@ export const Navbar = () => {
           <a href="#request-demo">Request a Demo</a>
         </div>
         <div className="navbar__actions">
-          <button className="navbar__button" onClick={toggleMenu}>
-            {isOpen ? "Close" : "Get Started"}
-          </button>
+          <button className="navbar__button">Get Started</button>
           <span className="navbar__icon">
             <FaArrowRightLong />
           </span>

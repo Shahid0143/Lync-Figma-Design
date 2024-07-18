@@ -79,11 +79,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    // border: 1px solid red;
+    //  border: 1px solid red;
 
     p {
       font-weight: bold;
       font-size: x-large;
+      
     }
 
     .btn-row {
@@ -108,6 +109,7 @@
           top: 16.2%;
           left: -14%;
         }
+       
       }
 
       .btn-col1 {
@@ -145,9 +147,9 @@
       width: 90%;
       margin-top: -25px;
 
-      p {
-        font-size: large;
-      }
+      // p {
+      //   font-size: large;
+      // }
 
       .btn-row {
         flex-direction: column;
@@ -160,14 +162,15 @@
 
           button {
             width: 100%;
-            padding: 10px;
+            padding: 19px;
           }
 
           .arrow-icon1 {
-            top: 50%;
-            left: 90%;
+            top: -36%;
+            left: 84%;
             transform: translateY(-50%);
           }
+          
         }
       }
     }
@@ -272,7 +275,10 @@
   }
 
   .txt-back {
-    // margin-top: -90px;
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 50px;
+    text-align: center;
     z-index: 99;
   }
 
@@ -299,7 +305,10 @@
       gap: 10px;
       .txt-back {
         z-index: none;
+        width: 10%;
+        border: 1px solid yellow;
       }
+      
     }
   }
 }

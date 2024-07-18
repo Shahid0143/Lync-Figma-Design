@@ -30,7 +30,7 @@ export const Headersection = () => {
             <img src={rec2} alt="Rectangle 2" />
           </div>
         </div>
-       
+
         <div className="two-rect-box">
           <div>
             <img src={rec3} alt="Rectangle 3" />
@@ -39,7 +39,7 @@ export const Headersection = () => {
             <img src={rec4} alt="Rectangle 4" />
           </div>
         </div>
-       
+
         <div className="third-rect-box">
           <div>
             <img src={rect5} alt="Rectangle 5" />
@@ -68,8 +68,8 @@ export const Headersection = () => {
                 <FaArrowRightLong className="arrow-icon1" />
               </span>
             </div>
-            <div className="btn-col1">
-              <button>View Doc</button>
+            <div className="btn-col">
+              <button style={{ background: "black" }}>View Doc</button>
               <span>
                 <FaArrowRightLong className="arrow-icon1" />
               </span>
@@ -80,7 +80,6 @@ export const Headersection = () => {
       {/* //// */}
       <div className="text-image-box">
         <div className="txt-back">
-          {" "}
           <h2>Backed By</h2>
         </div>
         <div className="three-img-box">
@@ -121,7 +120,7 @@ export const Headersection = () => {
             <div className="txt-font2">
               <h2>
                 Making blockchain gaming accessible to{" "}
-                <span style={{color:"blue"}}>everyone!</span>
+                <span style={{ color: "blue" }}>everyone!</span>
               </h2>
             </div>
           </div>
@@ -149,7 +148,7 @@ export const Headersection = () => {
         <div className="power-txt txt-font2">
           <h2>
             Power Up Your Web3 Game Development, With
-            <span style={{color:"purple"}}>LYNC SDKs</span>
+            <span style={{ color: "purple" }}>LYNC SDKs</span>
           </h2>
         </div>
         <div className="txt-3d">

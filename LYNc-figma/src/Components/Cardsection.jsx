@@ -1,7 +1,7 @@
-import React from 'react'
-import "../Styles/Cardsection.scss"
-import img1 from "../assets/image.png"
-import aptos from "../assets/aptos.png"
+import React from "react";
+import "../Styles/Cardsection.scss";
+import img1 from "../assets/image.png";
+import aptos from "../assets/aptos.png";
 import saga from "../assets/saga.png";
 import ethereum from "../assets/ethereum.png";
 import astar from "../assets/astar.png";
@@ -20,10 +20,10 @@ export const Cardsection = () => {
       <div className="main-card-box">
         <div className="txt-cen text-box-style">
           <h1>
-            Powered <span style={{color:"blue"}}>Suite</span>
+            Powered <span style={{ color: "blue" }}>Suite</span>
           </h1>
         </div>
-  
+
         <div className="card-main-container">
           <div className="card-shape-box">
             <img src={img1} />
@@ -69,7 +69,7 @@ export const Cardsection = () => {
           </div>
         </div>
       </div>
-    
+
       <div className="main-card-box1">
         <div className="txt-cen text-box-style box-shape">
           <h1>
@@ -109,7 +109,7 @@ export const Cardsection = () => {
       <div className="main-card-box2">
         <div className="txt-cen text-box-style pos-btm">
           <h1>
-            From our <span style={{color:"blue"}}>Blog</span>
+            From our <span style={{ color: "blue" }}>Blog</span>
           </h1>
           <div className="txt-3d1">
             <p>
@@ -163,11 +163,11 @@ export const Cardsection = () => {
           </div>
         </div>
       </div>
-     
+
       <div className="main-card-box3">
         <div className="txt-cen text-box-style pos-btm">
           <h1>
-            Valuable<span style={{color:"blue"}}> Review!</span>
+            Valuable<span style={{ color: "blue" }}> Review!</span>
           </h1>
         </div>
         <div className="arrow-btn left1">
@@ -193,4 +193,4 @@ export const Cardsection = () => {
       </div>
     </>
   );
-}
+};
