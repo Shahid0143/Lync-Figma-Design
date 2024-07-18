@@ -35,7 +35,9 @@
     }
 
     @media (max-width: 480px) {
-      font-size: 4rem;
+      margin-top: 90%;
+      margin-bottom: 20%;
+      font-size: 5rem;
     }
   }
 
@@ -79,13 +81,14 @@
     }
 
     @media (max-width: 480px) {
+      margin-top: 30%;
       padding: 6px 12px;
     }
   }
 }
 
 .lync-text {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 4rem;
   color: #ffffff;
   text-transform: uppercase;
@@ -95,7 +98,7 @@
   opacity: calc(80%);
 
   &::before {
-    content: 'LYNC';
+    content: "LYNC";
     position: absolute;
     top: 0;
     left: 0;
@@ -137,7 +140,7 @@
       }
 
       @media (max-width: 480px) {
-        font-size: 24px;
+        margin-top: 60%;
       }
     }
 
@@ -160,8 +163,9 @@
       margin-top: 10px;
 
       @media (max-width: 480px) {
+        margin-top: 10%;
         justify-content: center;
-        gap: 10px;
+        gap: 50px;
       }
     }
   }
@@ -248,6 +252,7 @@
     color: white;
 
     @media (max-width: 480px) {
+      margin-top: 20%;
       font-size: 1rem;
     }
   }
@@ -258,6 +263,7 @@
     margin: 5px 0;
 
     @media (max-width: 480px) {
+      margin-top: 10%;
       font-size: 0.9rem;
     }
   }

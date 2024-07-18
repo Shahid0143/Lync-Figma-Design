@@ -1,5 +1,13 @@
 body {
   background-color: #04081f;
- text-align: center;
+  /* text-align: center; */
   color: whitesmoke;
+}
+*{
+  margin: none;
+  padding: none;
+  
+}
+h1,h2,p{
+  text-align: center;
 }
