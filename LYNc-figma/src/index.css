@@ -1,8 +1,8 @@
 body {
   background-color: #04081f;
-  /* text-align: center; */
+
   color: whitesmoke;
-  margin-left: 5%;
+ 
 }
 *{
   margin: none;
@@ -12,3 +12,8 @@ body {
 h1,h2,p{
   text-align: center;
 }
+ @media (max-width: 768px) {
+   body{
+    margin-left: 10%;
+   }
+ }
