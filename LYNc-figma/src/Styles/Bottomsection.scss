@@ -3,10 +3,11 @@
   margin: auto;
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  /* border: 1px solid aqua; */
+  margin-top: 50px;
 
   img {
     width: 100%;
@@ -19,6 +20,14 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+
+    @media (max-width: 768px) {
+      font-size: 30px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 24px;
+    }
   }
 
   div:nth-child(2) > div {
@@ -29,6 +38,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media (max-width: 768px) {
+      top: 65%;
+    }
+
+    @media (max-width: 480px) {
+      top: 70%;
+    }
   }
 
   button {
@@ -47,15 +64,17 @@
   h1 {
     width: 40%;
     height: 100px;
-    /* border: 1px solid red; */
     font-size: 50px;
+
+    @media (max-width: 480px) {
+      display: none;
+    }
   }
 }
 
 .tel-txt {
   display: flex;
   align-items: center;
-  /* border: 1px solid yellow; */
   gap: 10px;
   width: fit-content;
   padding: 5px;
@@ -72,25 +91,83 @@
     img {
       width: 24px;
       height: auto;
+
+      @media (max-width: 480px) {
+        display: none;
+        
+      }
     }
 
     p {
       margin: 0;
       padding-left: 10px;
       color: white;
+
+      @media (max-width: 480px) {
+        font-size: 14px;
+        padding-left: 5px;
+        
+      }
     }
   }
 }
 
-.img-round {
-  width: 90%;
-  height: 60px;
-  /* border: 1px solid grey; */
-  border-radius: 20px;
-  text-align: center;
-  background-color: #1c1638;
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.main-card-box1 {
+  width: 100%;
+  margin-top: 90px;
+
+  .txt-cen {
+    text-align: center;
+  }
+
+  .text-box-style {
+    font-size: 25px;
+
+    .box-shape {
+      width: 55.2%;
+      text-align: center;
+      margin: auto;
+    }
+  }
+
+  .grid-box {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:20px;
+    align-items: center;
+    padding-left: 50px;
+
+    @media (max-width: 1024px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+      padding-left: 0;
+    }
+
+    @media (max-width: 480px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .img-round {
+      width: 90%;
+      height: 60px;
+      border-radius: 20px;
+      text-align: center;
+      background-color: #1c1638;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
 }

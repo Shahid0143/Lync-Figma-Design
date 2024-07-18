@@ -14,21 +14,21 @@ export const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar__container">
-        <div className="navbar__logo-and-links">
-          <div className="navbar__logo">
-            <img src={sub1} alt="Logo Part 1" />
-            <img src={sub} alt="Logo Part 2" />
-          </div>
-          <div className="navbar__links">
-            <a href="#home">Home</a>
-            <a href="#documentation">Documentation</a>
-            <a href="#blog">Blog</a>
-            <a href="#lyncportal">LyncPortal</a>
-            <a href="#request-demo">Request a Demo</a>
-          </div>
+        <div className="navbar__logo">
+          <img src={sub1} alt="Logo Part 1" />
+          <img src={sub} alt="Logo Part 2" />
+        </div>
+        <div className="navbar__links">
+          <a href="#home">Home</a>
+          <a href="#documentation">Documentation</a>
+          <a href="#blog">Blog</a>
+          <a href="#lyncportal">LyncPortal</a>
+          <a href="#request-demo">Request a Demo</a>
         </div>
         <div className="navbar__actions">
-          <button className="navbar__button">Get Started</button>
+          <button className="navbar__button" onClick={toggleMenu}>
+            {isOpen ? "Close" : "Get Started"}
+          </button>
           <span className="navbar__icon">
             <FaArrowRightLong />
           </span>
@@ -44,7 +44,9 @@ export const Navbar = () => {
           <a href="#blog">Blog</a>
           <a href="#lyncportal">LyncPortal</a>
           <a href="#request-demo">Request a Demo</a>
-          <button className="navbar__button">Get Started</button>
+          <button className="navbar__button" onClick={toggleMenu}>
+            Close
+          </button>
         </div>
       )}
     </nav>

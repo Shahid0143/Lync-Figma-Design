@@ -9,10 +9,16 @@
   position: relative;
   background-color: #04081f;
   opacity: calc(90%);
-  /* border: 1px solid grey; */
 
   .first-rect-box {
     width: 15%;
+  }
+  .third-rect-box {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
   }
 
   .two-rect-box {
@@ -24,12 +30,6 @@
     left: 10%;
     top: 50%;
     transform: translateY(-50%);
-  }
-
-  .third-rect-box {
-    width: 15%;
-    position: absolute;
-    right: 0;
   }
 
   img {
@@ -46,15 +46,20 @@
     text-align: center;
     width: 52.9%;
     height: 200px;
-    /* border: 1px solid red; */
 
     h1 {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
       font-weight: bolder;
       font-size: 65px;
 
       .flex-web {
-        background: linear-gradient(90deg, hsla(328, 75%, 45%, 1) 0%, hsla(298, 83%, 39%, 1) 46%);
+        background: linear-gradient(
+          90deg,
+          hsla(328, 75%, 45%, 1) 0%,
+          hsla(298, 83%, 39%, 1) 46%
+        );
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -67,14 +72,14 @@
   .txt-web {
     z-index: 999;
     margin-top: 8%;
-    width: 65%;
-    /* border: 1px solid rgb(89, 0, 255); */
-    margin-left: 3%;
+    width: 50%;
+    margin-left: 9%;
     height: 170px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    // border: 1px solid red;
 
     p {
       font-weight: bold;
@@ -116,6 +121,127 @@
       }
     }
   }
+
+  @media (max-width: 1200px) {
+    height: auto;
+    flex-direction: column;
+    .first-rect-box,
+    .third-rect-box {
+      display: none;
+    }
+    .text-box {
+      position: static;
+      transform: none;
+      width: 90%;
+      margin-top: 20px;
+      z-index: 99;
+
+      h1 {
+        font-size: 50px;
+      }
+    }
+
+    .txt-web {
+      width: 90%;
+      margin-top: -25px;
+
+      p {
+        font-size: large;
+      }
+
+      .btn-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+
+        .btn-col,
+        .btn-col1 {
+          margin-left: 0;
+
+          button {
+            width: 100%;
+            padding: 10px;
+          }
+
+          .arrow-icon1 {
+            top: 50%;
+            left: 90%;
+            transform: translateY(-50%);
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .first-rect-box,
+    .third-rect-box {
+      width: 25%;
+      display: none;
+    }
+
+    .two-rect-box {
+      width: 90%;
+      left: 5%;
+    }
+
+    .text-box {
+      h1 {
+        font-size: 40px;
+      }
+    }
+
+    .txt-web {
+      p {
+        font-size: medium;
+      }
+
+      .btn-row .btn-col button,
+      .btn-row .btn-col1 button {
+        padding: 10px;
+      }
+
+      .arrow-icon1 {
+        left: 85%;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .first-rect-box,
+    .third-rect-box {
+      width: 35%;
+    }
+
+    .two-rect-box {
+      width: 100%;
+      left: 0;
+    }
+
+    .text-box {
+      h1 {
+        font-size: 30px;
+      }
+    }
+
+    .txt-web {
+      p {
+        font-size: small;
+        margin-bottom: 50px;
+      }
+
+      .btn-row {
+        .btn-col button,
+        .btn-col1 button {
+          padding: 8px;
+        }
+
+        .arrow-icon1 {
+          display: none;
+        }
+      }
+    }
+  }
 }
 
 .text-image-box {
@@ -124,14 +250,12 @@
   justify-content: center;
   align-items: center;
   width: 40%;
-  height: 100px;
-  /* border: 1px solid grey; */
+  // height: 100px;
   margin: auto;
 
   .three-img-box {
-    /* border: 1px solid white; */
     margin-top: 15px;
-    width: 100%;
+    // width: 100%;
     height: 80px;
     gap: 40px;
     border-radius: 50px;
@@ -148,14 +272,40 @@
   }
 
   .txt-back {
-    margin-top: -90px;
+    // margin-top: -90px;
     z-index: 99;
+  }
+
+  @media (max-width: 768px) {
+    width: 80%;
+
+    .three-img-box {
+      gap: 20px;
+
+      .img-row {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    width: 90%;
+
+    .three-img-box {
+      gap: 10px;
+      .txt-back {
+        z-index: none;
+      }
+    }
   }
 }
 
 .txt-exp {
   width: 50%;
-  /* border: 1px solid red; */
   margin: auto;
   text-align: center;
 
@@ -168,15 +318,11 @@
 
   .space-top {
     margin-top: 40px;
-    /* border: 1px solid aqua; */
   }
 
   .line {
     margin-top: 90px;
     margin-bottom: 30px;
-    /* border: 1px solid red; */
-    width: 100%;
-    
 
     &1 {
       margin-top: 40px;
@@ -188,7 +334,6 @@
     font-weight: bolder;
     font-size: 20px;
     width: 52vw;
-    /* border: 1px solid green; */
   }
 
   .txt-font2 {
@@ -201,14 +346,12 @@
   }
 
   .bc-img {
-    /* border: 1px solid grey; */
     margin-top: 90px;
     height: 190px;
     width: 100%;
   }
 
   .img-flex-item {
-    /* border: 1px solid aqua; */
     width: 60vw;
     display: flex;
     align-items: center;
@@ -219,16 +362,79 @@
   }
 
   .power-txt {
-    /* border: 1px solid grey; */
     height: 140px;
     margin-top: 30%;
   }
 
   .txt-3d {
-    /* border: 1px solid red; */
     width: 100%;
     font-size: 20px;
     position: relative;
     top: -50px;
+  }
+
+  @media (max-width: 1200px) {
+    width: 80%;
+
+    .txt-font {
+      font-size: 18px;
+      margin: auto;
+    }
+
+    .txt-font2 {
+      font-size: 25px;
+    }
+
+    .img-flex-item {
+      width: 80%;
+      left: 10%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 90%;
+
+    .txt-font {
+      font-size: 16px;
+    }
+
+    .txt-font2 {
+      font-size: 22px;
+    }
+
+    .img-flex-item {
+      width: 100%;
+      gap: 50px;
+      left: 0;
+    }
+  }
+
+  @media (max-width: 480px) {
+    width: 95%;
+
+    .txt-font {
+      font-size: 14px;
+      margin: auto;
+      position: relative;
+      top: 80px;
+    }
+
+    .txt-font2 {
+      font-size: 20px;
+    }
+
+    .img-flex-item {
+      flex-direction: column;
+      gap: 20px;
+      position: static;
+    }
+
+    .power-txt {
+      margin-top: 20%;
+    }
+
+    .txt-3d {
+      font-size: 16px;
+    }
   }
 }

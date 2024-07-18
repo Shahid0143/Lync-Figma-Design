@@ -20,7 +20,7 @@ export const Cardsection = () => {
       <div className="main-card-box">
         <div className="txt-cen text-box-style">
           <h1>
-            Powered <span className="color-txt">Suite</span>
+            Powered <span style={{color:"blue"}}>Suite</span>
           </h1>
         </div>
   
@@ -109,7 +109,7 @@ export const Cardsection = () => {
       <div className="main-card-box2">
         <div className="txt-cen text-box-style pos-btm">
           <h1>
-            From our <span className="color-txt">Blog</span>
+            From our <span style={{color:"blue"}}>Blog</span>
           </h1>
           <div className="txt-3d1">
             <p>
@@ -167,7 +167,7 @@ export const Cardsection = () => {
       <div className="main-card-box3">
         <div className="txt-cen text-box-style pos-btm">
           <h1>
-            Valuable<span className="color-txt"> Review!</span>
+            Valuable<span style={{color:"blue"}}> Review!</span>
           </h1>
         </div>
         <div className="arrow-btn left1">

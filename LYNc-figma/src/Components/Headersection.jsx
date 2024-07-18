@@ -121,7 +121,7 @@ export const Headersection = () => {
             <div className="txt-font2">
               <h2>
                 Making blockchain gaming accessible to{" "}
-                <span className="color-txt">everyone!</span>
+                <span style={{color:"blue"}}>everyone!</span>
               </h2>
             </div>
           </div>
@@ -149,7 +149,7 @@ export const Headersection = () => {
         <div className="power-txt txt-font2">
           <h2>
             Power Up Your Web3 Game Development, With
-            <span className="flex-web">LYNC SDKs</span>
+            <span style={{color:"purple"}}>LYNC SDKs</span>
           </h2>
         </div>
         <div className="txt-3d">

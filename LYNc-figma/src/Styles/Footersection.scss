@@ -1,6 +1,7 @@
 .footer-box {
   position: relative;
   margin-top: 15%;
+  width: 98%;
 }
 
 .image-container {
@@ -25,10 +26,17 @@
 
   h1 {
     font-size: 10rem;
-    /* Increased font size */
     color: gray;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
     margin-bottom: 20px;
+
+    @media (max-width: 768px) {
+      font-size: 6rem;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 4rem;
+    }
   }
 
   h3 {
@@ -38,6 +46,16 @@
     margin-bottom: 20px;
     position: absolute;
     top: 55%;
+
+    @media (max-width: 768px) {
+      font-size: 1.5rem;
+      top: 65%;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 1.2rem;
+      top: 70%;
+    }
   }
 }
 
@@ -55,9 +73,17 @@
     border: none;
     margin-left: 20px;
     margin: auto;
+
+    @media (max-width: 768px) {
+      padding: 8px 16px;
+    }
+
+    @media (max-width: 480px) {
+      padding: 6px 12px;
+    }
   }
 }
-/* 3D Text Effect for LYNC */
+
 .lync-text {
   font-family: 'Arial', sans-serif;
   font-size: 4rem;
@@ -66,7 +92,6 @@
   position: relative;
   display: inline-block;
   letter-spacing: 3px;
-  /* border: 1px solid red; */
   opacity: calc(80%);
 
   &::before {
@@ -78,87 +103,162 @@
     z-index: -1;
     text-shadow: -1px -1px 0 #000, 1px 1px 0 #000;
     transform: translate(10px, 3px);
-    
+  }
+
+  @media (max-width: 768px) {
+    font-size: 3rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 2rem;
   }
 }
 
 .mid-foot-box {
-  /* border: 1px solid red; */
   width: 100%;
-  height: 300px;
+  height: 100px;
   position: absolute;
-  top: 15%;
+  top: 20%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
+  padding: 20px 0;
 
   .txt-icon-box {
+    text-align: center;
+    margin-bottom: 20px;
+
     h2 {
       font-size: 40px;
+
+      @media (max-width: 768px) {
+        font-size: 30px;
+      }
+
+      @media (max-width: 480px) {
+        font-size: 24px;
+      }
     }
 
     p {
       font-size: 19px;
       color: white;
+
+      @media (max-width: 768px) {
+        font-size: 16px;
+      }
+
+      @media (max-width: 480px) {
+        font-size: 14px;
+      }
+    }
+
+    .icon-item {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 10px;
+
+      @media (max-width: 480px) {
+        justify-content: center;
+        gap: 10px;
+      }
     }
   }
 
-  .icon-item {
+  .newsletter-signup {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+
+    h4 {
+      margin-bottom: 10px;
+      font-size: 1.5rem;
+      color: whitesmoke;
+
+      @media (max-width: 480px) {
+        font-size: 1.2rem;
+      }
+    }
+
+    p {
+      margin-bottom: 15px;
+      color: white;
+
+      @media (max-width: 480px) {
+        font-size: 0.9rem;
+      }
+    }
+
+    .input-container {
+      display: flex;
+      width: 100%;
+      max-width: 400px;
+
+      input {
+        flex: 1;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 20px 0 0 20px;
+        font-size: 1rem;
+        outline: none;
+        transition: border 0.3s;
+
+        &:focus {
+          border-color: #007bff;
+        }
+
+        @media (max-width: 480px) {
+          padding: 8px;
+        }
+      }
+
+      button {
+        padding: 10px 15px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 0 20px 20px 0;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: #0056b3;
+        }
+
+        @media (max-width: 480px) {
+          padding: 8px 12px;
+        }
+      }
+    }
   }
 }
 
-.newsletter-signup {
-  display: flex; 
-  flex-direction: column; 
-  align-items: center; 
-  margin-top: 20px; 
+.mid-foot-box div {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
 
-  h4 {
-    margin-bottom: 10px; 
-    font-size: 1.5rem; 
-    color: whitesmoke; 
+  h3 {
+    font-size: 1.2rem;
+    color: white;
+
+    @media (max-width: 480px) {
+      font-size: 1rem;
+    }
   }
 
   p {
-    margin-bottom: 15px; 
-    color: white; 
-    text-align: center; 
-  }
+    font-size: 1rem;
+    color: white;
+    margin: 5px 0;
 
-  .input-container {
-    display: flex; 
-    width: 100%; 
-    max-width: 400px; 
-
-    input {
-      flex: 1; 
-      padding: 10px; 
-      border: 1px solid #ccc; 
-      border-radius: 20px 0 0 20px; 
-      font-size: 1rem; 
-      outline: none; 
-      transition: border 0.3s;
-
-      &:focus {
-        border-color: #007bff; 
-      }
-    }
-
-    button {
-      padding: 10px 15px; 
-      background-color: #007bff; 
-      color: white;
-      border: none; 
-      border-radius: 0 20px 20px 0; 
-      cursor: pointer; 
-      font-size: 1rem; 
-      transition: background-color 0.3s; 
-
-      &:hover {
-        background-color: #0056b3; 
-      }
+    @media (max-width: 480px) {
+      font-size: 0.9rem;
     }
   }
 }

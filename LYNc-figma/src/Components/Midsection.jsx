@@ -7,20 +7,19 @@ import game from "../assets/game.png";
 import rectanglecard from "../assets/Rectanglecard.png";
 import squarecard from "../assets/squarecard.png";
 import crypto from "../assets/crypto.png";
+
 function Midsection() {
   return (
-    <div>
+    <div className="midsection">
       <div className="top-box">
         <div>
-          <img src={power} />
+          <img src={power} alt="Power" />
         </div>
         <div className="pos-eth">
-          <img src={Ethrium} />
+          <img src={Ethrium} alt="Ethereum" />
         </div>
       </div>
-      {/* /////////// */}
       <div className="container">
-        {/* First Main Card */}
         <div className="card-box">
           <img src={boxcard} alt="Box Card" className="boxcard-img" />
           <div className="content">
@@ -29,37 +28,34 @@ function Midsection() {
             <button>View Doc</button>
           </div>
           <div className="dummy-img">
-            <img src={game} alt="Dummy" />
+            <img src={game} alt="Game" />
           </div>
         </div>
-
-        {/* Center Column Cards */}
         <div className="number-txt-box">
           <div className="first-box">
             <img src={rectanglecard} alt="Card 1" className="rectangle-image" />
             <div className="number-txt">
               <h3>200 +</h3>
-              <p>Project have download and Integrated Lync SDKs!</p>
+              <p>Projects have downloaded and integrated Lync SDKs!</p>
             </div>
           </div>
           <div className="second-box">
             <img src={rectanglecard} alt="Card 2" className="rectangle-image" />
             <div className="number-txt color-txt-num">
               <h3>8000 +</h3>
-              <p>Contact have been deplyed vic LYNC</p>
+              <p>Contracts have been deployed via LYNC</p>
             </div>
           </div>
         </div>
-        {/* Second Main Card */}
         <div className="number-txt-box1">
           <div className="first-box">
             <img src={squarecard} alt="Card 1" className="rectangle-image1" />
             <div className="number-txt1">
               <h3>50000 +</h3>
-              <p>Project have download and Integrated Lync SDKs!</p>
+              <p>Projects have downloaded and integrated Lync SDKs!</p>
             </div>
             <div className="dummy-img">
-              <img src={crypto} alt="Dummy" />
+              <img src={crypto} alt="Crypto" />
             </div>
           </div>
         </div>

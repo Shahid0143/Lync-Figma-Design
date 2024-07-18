@@ -41,7 +41,7 @@ const Bottomsection = () => {
 
         <div className="grid-box">
           <div className="img-round">
-            <img src={chin} />
+            <img src={spheron} />
           </div>
           <div className="img-round">
             <img src={lighthouse} />

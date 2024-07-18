@@ -12,32 +12,38 @@
     height: 60px;
     justify-content: space-between;
     padding: 0 20px;
-  }
 
-  &__logo-and-links {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    @media (min-width: 769px) {
+      justify-content: space-between;
+    }
   }
 
   &__logo {
     display: flex;
     align-items: center;
-    justify-content: center;
+    
+    @media (min-width: 769px) {
+      flex-basis: auto;
+      margin-right: auto;
+    }
   }
 
   &__links {
-    display: flex;
-    justify-content: space-evenly;
-    width: 60vw;
+    display: none; 
 
-    a {
-      color: white;
-      text-decoration: none;
-      margin-left: 20px;
+    @media (min-width: 769px) {
+      display: flex;
+      justify-content: center;
+      flex-grow: 1; 
 
-      &:hover {
-        text-decoration: underline;
+      a {
+        color: white;
+        text-decoration: none;
+        margin: 0 20px;
+
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }
@@ -50,7 +56,8 @@
       border-radius: 19px;
       color: black;
       font-weight: 600;
-      padding: 10px 28px 10px 10px;
+      padding: 14px 30px 14px 20px;
+     
     }
 
     & .navbar__icon {
@@ -64,27 +71,27 @@
   &__hamburger {
     color: white;
     cursor: pointer;
-    display: none;
+    display: block;
     font-size: 1.5rem;
-    position: absolute;
-    right: 20px;
-
-    @media (max-width: 768px) {
-      display: block;
+    
+    @media (min-width: 769px) {
+      display: none; 
     }
   }
 
   &__dropdown {
-    background-color: #291451;
+    margin-top: 10px;
+    background-color: #000000e4;
     border-radius: 0 0 30px 30px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    display: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.874);
+    display: flex;
     flex-direction: column;
     padding: 10px;
     position: absolute;
     top: 60px;
-    width: 100%;
+    width: 59%;
     z-index: 10;
+    left: 20%;
 
     a,
     .navbar__button {
@@ -92,27 +99,25 @@
       margin: 10px 0;
       text-align: center;
       text-decoration: none;
+     
     }
 
     .navbar__button {
-      background-color: white;
+     
       border-radius: 10px;
-      color: black;
+      color: white;
       margin: auto;
-      padding: 10px;
+      // padding: 10px;
       width: 90%;
-    }
-
-    @media (max-width: 768px) {
-      display: flex;
+       background-color: transparent;
+      border: none;
     }
   }
 
-  @media (max-width: 768px) {
-
+  @media (max-width: 777px) {
     &__links,
     &__actions {
-      display: none;
+      display: none; 
     }
 
     &__container {
