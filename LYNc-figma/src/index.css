@@ -2,6 +2,7 @@ body {
   background-color: #04081f;
   /* text-align: center; */
   color: whitesmoke;
+  margin-left: 5%;
 }
 *{
   margin: none;
