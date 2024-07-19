@@ -145,10 +145,6 @@
       width: 90%;
       margin-top: -25px;
 
-      // p {
-      //   font-size: large;
-      // }
-
       .btn-row {
         flex-direction: column;
         align-items: center;
@@ -208,9 +204,6 @@
   }
 
   @media (max-width: 480px) {
-    // position: absolute;
-    // top: -70%;
-    // border: 1px solid red;
 
     .first-rect-box,
     .third-rect-box {
@@ -234,11 +227,6 @@
       gap: 50px;
       display: block;
     }
-    // .text-box {
-    //   h1 {
-    //     font-size: 25px;
-    //   }
-    // }
 
     .txt-web {
       position: absolute;
