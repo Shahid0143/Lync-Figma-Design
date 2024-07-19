@@ -2,14 +2,13 @@ body {
   background-color: #04081f;
   text-align: center;
   color: whitesmoke;
-  width: 100%;
 }
 * {
   margin: none;
   padding: none;
-  box-sizing: border-box;
 }
-
-
-   
-  
+.App{
+  width: 100vw;
+  height: auto;
+  text-align: center;
+}

@@ -2,9 +2,9 @@
   background-color: #291451;
   border-radius: 30px;
   box-shadow: 0 0 0 0.5px rgb(255, 255, 255);
-  margin: 65px auto 0;
+  margin: 60px auto 0;
   position: relative;
-  width: 95%;
+  width: 98%;
 
   &__container {
     align-items: center;
@@ -21,7 +21,7 @@
   &__logo {
     display: flex;
     align-items: center;
-    
+
     @media (min-width: 769px) {
       flex-basis: auto;
       margin-right: auto;
@@ -29,12 +29,12 @@
   }
 
   &__links {
-    display: none; 
+    display: none;
 
     @media (min-width: 769px) {
       display: flex;
       justify-content: center;
-      flex-grow: 1; 
+      flex-grow: 1;
 
       a {
         color: white;
@@ -57,7 +57,6 @@
       color: black;
       font-weight: 600;
       padding: 10px 25px 10px 15px;
-     
     }
 
     & .navbar__icon {
@@ -73,9 +72,9 @@
     cursor: pointer;
     display: block;
     font-size: 1.5rem;
-    
+
     @media (min-width: 769px) {
-      display: none; 
+      display: none;
     }
   }
 
@@ -99,17 +98,15 @@
       margin: 10px 0;
       text-align: center;
       text-decoration: none;
-     
     }
 
     .navbar__button {
-     
       border-radius: 10px;
       color: white;
       margin: auto;
       // padding: 10px;
       width: 90%;
-       background-color: transparent;
+      background-color: transparent;
       border: none;
     }
   }
@@ -117,7 +114,7 @@
   @media (max-width: 777px) {
     &__links,
     &__actions {
-      display: none; 
+      display: none;
     }
 
     &__container {

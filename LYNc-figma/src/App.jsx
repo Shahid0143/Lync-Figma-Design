@@ -4,13 +4,13 @@ import { Footersection } from "./Components/Footersection"
 import { Headersection } from "./Components/Headersection"
 import Midsection from "./Components/Midsection"
 import { Navbar } from "./Components/Navbar"
-
+import "./index.css"
 function App() {
 
 
   return (
     <>
-      <div>
+      <div className="App">
       <Navbar/>
       <Headersection/>
       <Midsection/>
