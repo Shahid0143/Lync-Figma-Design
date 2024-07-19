@@ -23,8 +23,8 @@
     align-items: center;
 
     @media (min-width: 769px) {
-      // flex-basis: auto;
-      // margin-right: auto;
+      flex-basis: auto;
+      margin-right: auto;
     }
   }
 
@@ -34,7 +34,7 @@
     @media (min-width: 769px) {
       display: flex;
       justify-content: center;
-      // flex-grow: 1;
+      flex-grow: 1;
 
       a {
         color: white;
