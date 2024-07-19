@@ -18,10 +18,7 @@
 
   // Tablet view
   @media (max-width: 768px) {
-    .container {
-      grid-template-columns: 1fr;
-      gap: 15px;
-    }
+   
   }
 
   // Mobile view
@@ -37,10 +34,11 @@
 @media (max-width: 1200px) {
   .midsection {
     .top-box {
+      width: 80%;
+      margin: auto;
       .pos-eth {
-        position: absolute;
-        // right: -24%;
-        // border: 1px solid red;
+        width: 43%;
+        height: 36%;
       }
     }
   }
