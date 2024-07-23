@@ -1,5 +1,5 @@
 import React from "react";
-import "../Styles/Animationcard.scss"; // Ensure the correct path to the SCSS file
+import "../Styles/Animationcard.scss"; 
 
 import game from "../assets/game.png";
 import crypto from "../assets/crypto.png";
