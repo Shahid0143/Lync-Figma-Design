@@ -78,7 +78,7 @@ export const Headersection = () => {
         </div>
       </div>
       {/* //// */}
-      <div className="text-image-box">
+      <div className="text-image-box ">
         <div className="txt-back">
           <h2>Backed By</h2>
         </div>

@@ -1,15 +1,25 @@
 .midsection {
+  position: relative;
+  padding: 20px;
+  border-radius: 20px;
+  
   .top-box {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 95%;
     margin-left: 2%;
+    border-radius: 30px;
+    .power-image {
+      z-index: 1; // Ensure it stays on top
+    }
+
     .pos-eth {
       position: absolute;
       right: 2%;
-      // border: 1px solid red;
+      animation: float 3s ease-in-out infinite;
     }
+
     img {
       width: 100%;
       max-width: 940px;
@@ -18,7 +28,12 @@
 
   // Tablet view
   @media (max-width: 768px) {
-   
+    .top-box {
+      .pos-eth {
+        width: 50%;
+        right: 5%;
+      }
+    }
   }
 
   // Mobile view
@@ -29,17 +44,28 @@
       }
     }
   }
-}
 
-@media (max-width: 1200px) {
-  .midsection {
+  @media (max-width: 1200px) {
     .top-box {
       width: 80%;
       margin: auto;
+
       .pos-eth {
         width: 40%;
-        height: 32%;
       }
     }
+  }
+}
+
+// Keyframes for floating animation
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }

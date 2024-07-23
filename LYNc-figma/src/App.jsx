@@ -1,3 +1,4 @@
+import Animationsection from "./Components/Animationsection"
 import Bottomsection from "./Components/Bottomsection"
 import { Cardsection } from "./Components/Cardsection"
 import { Footersection } from "./Components/Footersection"
@@ -14,6 +15,7 @@ function App() {
       <Navbar/>
       <Headersection/>
       <Midsection/>
+      <Animationsection/>
       <Cardsection/>
       <Bottomsection/>
       <Footersection/>
